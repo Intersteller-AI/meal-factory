@@ -13,7 +13,7 @@
 </div></header>
 <main class="wrap">
   <h1>Privacy policy</h1>
-  <p class="muted">Effective 13 November 2026 · Applies to the Meal Factory Android app and this website.</p>
+  <p class="muted">Effective 25 November 2026 (updated from 13 November 2026 to cover location, screenshots, price reports, ideas and notifications) · Applies to the Meal Factory Android app and this website.</p>
 
   <p>Meal Factory ("we", "us") is built by Priyanshu Sahu and Chirag Jaiswar in India. This policy explains what we collect, why, who helps us process it, and how you can delete it. Questions: <a href="mailto:sahupriyanshu69@gmail.com">sahupriyanshu69@gmail.com</a>.</p>
 
@@ -26,27 +26,45 @@
     <li>Diet type, food allergies, cuisine preferences, daily food budget and daily calorie target.</li>
     <li>Meal plans, foods you log (including text you type, such as "2 rotis and dal"), recipes you create or save, and how many AI features you used each day.</li>
     <li>Feedback you send from inside the app.</li>
+    <li>Food prices you type ("I paid ₹28 for 500 g tomatoes") or confirm with a thumbs-up, with the city and area they are for.</li>
+    <li>Problem reports and ideas you send from "Help us improve", including any words you write.</li>
   </ul>
+  <h3>Your area, for local food prices (optional)</h3>
+  <ul>
+    <li>If you choose "use my location", the app asks Android for your <b>approximate</b> location only (never precise or background location). Your phone turns it into a city, area and pincode, and only those words are saved to your profile. Your coordinates never leave your phone.</li>
+    <li>If you turn on location, the app quietly checks your area again at most once a day while you use it, so prices follow you if you move.</li>
+    <li>You can say no and pick your city by hand instead. Everything still works.</li>
+  </ul>
+  <h3>Screenshots you choose to attach</h3>
+  <ul><li>When you report a problem or suggest an idea, you can pick screenshots from your gallery. Only the images you pick are uploaded. They are stored in a private storage bucket that only our team can open. The app never reads your other photos and never uses the camera.</li></ul>
   <h3>Kept only on your phone</h3>
   <ul><li>Water glasses for each day and your list of recently generated recipes. These never leave your device.</li></ul>
   <h3>Technical data</h3>
-  <ul><li>Server logs (time, the screen or feature called, IP address, errors) used to keep the service secure and fix bugs.</li></ul>
-  <p>We do <b>not</b> collect your location, contacts, photos, or payment card details, and we do not show ads.</p>
+  <ul>
+    <li>Server logs (time, the screen or feature called, IP address, errors) used to keep the service secure and fix bugs.</li>
+    <li>With a problem report: the app version, Android version, phone model and the last few errors the app saw.</li>
+    <li>A push notification token, if you allow notifications, so we can tell you when an idea you backed has shipped or a report you sent is fixed. Meal reminders are scheduled on your phone.</li>
+  </ul>
+  <p>We do <b>not</b> collect your precise location, contacts, call logs, or payment card details, we do not read your photo gallery beyond the screenshots you pick, and we do not show ads.</p>
 
   <h2>How we use it</h2>
   <ul>
     <li>To calculate your calorie and protein targets and plan meals that fit your goal, diet, allergies and budget.</li>
     <li>To show your progress, food logs and saved recipes across sessions.</li>
     <li>To limit daily AI use fairly, prevent abuse, and fix problems.</li>
-    <li>To read your feedback and improve the app.</li>
+    <li>To read your feedback, fix the problems you report and improve the app.</li>
+    <li>To price dishes and groceries for your area. Prices you report are combined with other people's: a price becomes your area's price only when at least 3 different people agree, and it is shown without anyone's name.</li>
   </ul>
+  <h2>What other users can see</h2>
+  <ul><li>Ideas you post on the idea board can be seen by other users once our team approves them, with your <b>first name</b> only, never your email. Problem reports and screenshots are never shown to other users.</li></ul>
 
   <h2>AI processing</h2>
-  <p>To create meal plans, recipes, swaps and nutrition estimates, our server sends the details needed for that request (such as your goal, calorie and protein targets, diet, allergies, cuisine, budget and the food text you typed) to AI model providers: <b>Google (Gemini API)</b>, <b>Groq</b> and <b>OpenRouter</b> (which routes requests to the model's provider). We do <b>not</b> send your name or email to them. On free plans, some of these providers may keep requests for a limited time or use them to improve their services, under their own terms. AI answers are checked by our server for your allergies and diet, but please always double-check ingredients if you have a serious allergy.</p>
+  <p>To create meal plans, recipes, swaps and nutrition estimates, our server sends the details needed for that request (such as your goal, calorie and protein targets, diet, allergies, cuisine, budget and the food text you typed) to AI model providers: <b>Google (Gemini API)</b>, <b>Groq</b> and <b>OpenRouter</b> (which routes requests to the model's provider). To look up this week's food prices, we also send a city or area name (never linked to you) to Google's search-grounded Gemini. We do <b>not</b> send your name or email to them. On free plans, some of these providers may keep requests for a limited time or use them to improve their services, under their own terms. AI answers are checked by our server for your allergies and diet, but please always double-check ingredients if you have a serious allergy.</p>
 
   <h2>Who processes your data for us</h2>
   <ul>
-    <li><b>Supabase</b>: Google sign-in and login sessions.</li>
+    <li><b>Supabase</b>: Google sign-in, login sessions, and private storage for screenshots you attach.</li>
+    <li><b>Expo</b> (push notification service): delivers notifications to your phone using your push token.</li>
     <li><b>MongoDB Atlas</b>: our database (your profile, plans, logs, recipes, feedback).</li>
     <li><b>Google Cloud</b> (Cloud Run, India region): runs our servers.</li>
     <li><b>Google, Groq, OpenRouter</b>: AI processing as described above.</li>
@@ -57,7 +75,7 @@
 
   <h2>How long we keep it</h2>
   <ul>
-    <li>Your account data: until you delete your account.</li>
+    <li>Your account data, price reports, problem reports, ideas, votes and screenshots: until you delete your account. Deleting it removes all of them.</li>
     <li>Cached AI answers: deleted automatically within days.</li>
     <li>Server logs: kept for up to 30 days.</li>
   </ul>
